@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Test">
+            <classes>
+                <class name="E2E_Test.CreateAccountE2E"></class>
+                <class name="TestRegisteration.TC_Registeration"></class>
+                <class name="TestRegisteration.TC_VerifyRegOTP"></class>
+                <class name="TestRegisteration.TC_LogIn"></class>
+                <class name="TestRegisteration.TC_LogOut"></class>
+                <class name="TestRegisteration.TC_GetUser"></class>
+                <class name="TestRegisteration.TC_RemoveUser"></class>
+            </classes>
+    </test>
+<!--    <test name="Invalid Scenarios">-->
+<!--        <classes>-->
+<!--            <class name="TestRegisteration.TC_Registeration">-->
+<!--            </class>-->
+<!--            <class name="TestRegisteration.TC_VerifyRegOTP">-->
+<!--                <methods>-->
+<!--                    <exclude name="testVerifyRegisterOTP"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="TestRegisteration.TC_LogIn">-->
+<!--                <methods>-->
+<!--                    <exclude name="loginUserTest"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
