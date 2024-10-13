@@ -20,6 +20,7 @@ public class TC_Registeration extends AbstractAPI{
         Assert.assertEquals(regResJson.getString("data.validationMessage"), "Check Your Email We Have Sent To You OTP To Confirm Your Email");
         Assert.assertEquals(regResJson.getBoolean("data.isValid"), true);
     }
+
     @Test(dataProvider = "InvalidEmailData",dependsOnMethods = {"TestRegisteration.TC_Registeration.registerUser"})
     public void registerUserWithInvalidEmail(String email) {
         System.out.println("Test user registration process with valid role, password, firstname, lastname, country, city, address, gender, phone number and Invalid email ( "+email+" )");
