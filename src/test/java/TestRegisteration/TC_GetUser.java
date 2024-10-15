@@ -21,5 +21,6 @@ public class TC_GetUser extends AbstractAPI{
         JsonPath resJson = new JsonPath(respones);
         Assert.assertNull(resJson.get("data"));
         Assert.assertEquals(resJson.getString("error.message"),"User not found");
+
     }
 }

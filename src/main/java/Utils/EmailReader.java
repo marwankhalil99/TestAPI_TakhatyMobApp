@@ -21,7 +21,7 @@ public class EmailReader {
             // Connect to the Yahoo email account
             Session session = Session.getInstance(properties, null);
             Store store = session.getStore();
-            store.connect("imap.mail.yahoo.com", "marwanshamsooo@yahoo.com", "Your-passcode");
+            store.connect("imap.mail.yahoo.com", "marwanshamsooo@yahoo.com", "ruohoihurobgyvgc");
 
             // Access the inbox folder
             Folder inbox = store.getFolder("INBOX");
