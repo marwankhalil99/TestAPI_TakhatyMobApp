@@ -9,17 +9,21 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-public class CreateAccountE2E extends AbstractAPI{
+public class E2EScenario extends AbstractAPI{
     @Test(priority = 1)
-    public void testE2e() throws InterruptedException {
+    public void createAccAndDoExam() throws InterruptedException {
         TC_Registeration reg = new TC_Registeration();
         TC_VerifyRegOTP vt = new TC_VerifyRegOTP();
         TC_LogIn lg = new TC_LogIn();
         TC_LogOut TCLogOut = new TC_LogOut();
+        TC_GetExam tcGetExam = new TC_GetExam();
+        TC_EvaluateExam tcEvaluateExam = new TC_EvaluateExam();
         reg.registerUser();
         Thread.sleep(1000);
         vt.testVerifyRegisterOTP();
         lg.loginUserTest();
+        tcGetExam.getExamTest();
+        tcEvaluateExam.evaluateExamTestHighestScore();
         TCLogOut.testLogOut();
     }
     @Test(priority = 2)

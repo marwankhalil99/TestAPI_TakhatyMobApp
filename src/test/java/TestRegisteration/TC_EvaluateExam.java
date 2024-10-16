@@ -35,7 +35,7 @@ public class TC_EvaluateExam extends AbstractAPI {
         Assert.assertEquals(response.statusCode(), 200);
         Assert.assertEquals(response.jsonPath().getFloat("data.totalScore"),2);
         Assert.assertEquals(response.jsonPath().getFloat("data.percentage"),25);
-        Assert.assertEquals(response.jsonPath().getString("data.message"),"اكتئاب أقل من المتوسط");
+        Assert.assertEquals(response.jsonPath().getString("data.message"),"اكتئاب اقل من المتوسط");
         Assert.assertNull(response.jsonPath().get("data.recommendedDoctors[0]"));
 
     }
