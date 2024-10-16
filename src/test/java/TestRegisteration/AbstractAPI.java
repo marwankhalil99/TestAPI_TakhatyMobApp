@@ -13,8 +13,8 @@ public abstract class AbstractAPI {
             1,"+201017121378");
     protected static String userId;
     protected static String userToken;
-    protected static List<String> Q1Answers = new ArrayList<String>();
-    protected static List<String> Q2Answers = new ArrayList<String>();
+    protected static List<String> Q1Answers = new ArrayList<>();
+    protected static List<String> Q2Answers = new ArrayList<>();
     protected static String examID = "35906930-92cc-4464-ef7e-08dcbec630d0";
 
     public AbstractAPI(){
