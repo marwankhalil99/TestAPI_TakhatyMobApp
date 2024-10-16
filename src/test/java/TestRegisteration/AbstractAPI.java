@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class AbstractAPI {
-    protected final String endPoint = "https://takhaty.runasp.net";
+    protected final String endPoint = "https://takhaty-test.runasp.net";
     protected final ClientUser user = new ClientUser(0,"Maro1122332211@",
             "marwanshamsooo@yahoo.com","Maro","khalil",
             "egypt","Cairo","cairo - egypt",

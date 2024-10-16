@@ -11,10 +11,10 @@ public class TC_RemoveUser extends AbstractAPI {
     RemoveUserReq request = new RemoveUserReq();
     @Test(dependsOnMethods = {"TestRegisteration.TC_LogIn.loginUserTest"})
     public void testRemoveUser() {
-        System.out.println(" Remove User!");
+        System.out.println("Remove User!");
         String res = request.removeUserReq(userId, userToken,200);
         JsonPath resJson = new JsonPath(res);
         Assert.assertEquals(resJson.getString("data"), "Removed Successfully");
-        System.out.println("User removed successfully");
+        //System.out.println("User removed successfully");
     }
 }
