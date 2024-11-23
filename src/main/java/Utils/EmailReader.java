@@ -1,7 +1,7 @@
 package Utils;
 
 import javax.mail.*;
-        import javax.mail.internet.MimeMultipart;
+import javax.mail.internet.MimeMultipart;
 import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

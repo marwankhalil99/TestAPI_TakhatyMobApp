@@ -12,7 +12,7 @@ public class ClientUser {
     private int gender;
     private String phoneNumber;
     private String token;
-    private String userId;
+//    private String userId;
 
     public String getToken() {
         return token;
